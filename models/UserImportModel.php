@@ -51,7 +51,7 @@ class UserImportModel extends ImportModel
 
                 $this->logCreated();
 
-            } catch (\Exception $ex) {
+            } catch (Exception $ex) {
                 $this->logError($row, $ex->getMessage());
             }
         }
